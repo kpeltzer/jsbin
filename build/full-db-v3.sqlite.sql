@@ -58,7 +58,9 @@ CREATE TABLE IF NOT EXISTS `owners` (
   `css` INTEGER DEFAULT '0',
   `javascript` INTEGER DEFAULT '0',
   `archive` INTEGER DEFAULT '0',
-  `visibility` VARCHAR(255) DEFAULT 'public' NOT NULL
+  `visibility` VARCHAR(255) DEFAULT 'public' NOT NULL,
+  `type` VARCHAR(255) DEFAULT 'standard' NOT NULL,
+  `parent_id` INTEGER DEFAULT NULL
 );
 
 /*
